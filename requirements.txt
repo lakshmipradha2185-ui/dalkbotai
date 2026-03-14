@@ -1,0 +1,17 @@
+streamlit>=1.31.0
+langchain>=0.1.0
+langchain-google-genai
+langchain-community
+langchain-text-splitters
+google-generativeai
+faiss-cpu
+python-dotenv
+PyPDF2
+python-docx
+SpeechRecognition
+gTTS
+pyttsx3
+audio-recorder-streamlit
+python-pptx
+Pillow
+pytesseract
