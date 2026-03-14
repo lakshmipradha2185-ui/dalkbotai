@@ -20,6 +20,7 @@ import time
 
 # Load environment variables
 load_dotenv()
+os.environ["GOOGLE_API_KEY"] = os.getenv("GEMINI_API_KEY")
 
 # Set page configuration
 st.set_page_config(
