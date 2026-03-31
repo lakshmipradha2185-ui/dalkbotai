@@ -22,12 +22,26 @@ import time
 load_dotenv()
 os.environ["GOOGLE_API_KEY"] = os.getenv("GEMINI_API_KEY")
 
+
 # Set page configuration
 st.set_page_config(
     page_title="DalkBot AI | Academic OS",
     page_icon="🎓",
     layout="wide",
     initial_sidebar_state="expanded"
+)
+
+# Google Site Verification (inserts meta tag into <head>)
+st.markdown(
+    """
+    <script>
+    const meta = document.createElement('meta');
+    meta.name = 'google-site-verification';
+    meta.content = 'google907e65e34ec8e253';
+    document.head.appendChild(meta);
+    </script>
+    """,
+    unsafe_allow_html=True,
 )
 
 # Initialize Session State
